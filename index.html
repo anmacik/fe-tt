@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<script  src="jquery.js"></script>
+
+</head>
+<body>
+
+  <div class="header">
+    <nav class="navbar">
+        <a class="nav-logo"><img id="logo" src="images/logo.png"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home.</a>
+            </li>
+            <li class="nav-item">
+                <a href="#title" class="nav-link">About us.</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Portfolio.</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog.</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact-us-anchor" class="nav-link">Contact us.</a>
+            </li>
+            <nav class="sub-menu-elements">
+              <select name="language" class="select-language">
+                <option>En.</option>
+                <option>Ru.</option>
+              </select>
+                <li class="contact-us">
+                <a href="#contact-us-anchor" class="nav-link"><p>Contact us&rarr;</p></a>
+                </li>
+            </nav>
+
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+  </div>
+  <a name="title"></a>
+  <div class="title" >
+    <div class="title-text">
+    <div class="title-text-1"> THE SPIRIT OF DIGITAL AGENCY.</div>
+    <div class="title-text-2">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</div>
+    <div class="title-buttons">
+      <a href="/about-us" class="button-red">More Abous us</a>
+      <a href="#contact-us-anchor" class="touch-button">Get In Touch.</a>
+    </div>
+    </div>
+    <div>
+      <div class="slick-slider">
+        <div><img class"=slider" src="images/vector illustration.png"></div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio">
+    <div class="portfolio-text">
+      <p>See some of our</p>
+      <p> Creative work</p>
+    </div>
+    <div class="images-greed">
+      <div class="images-column">
+        <div class="image"></div>
+        <div class="image"></div>
+      </div>
+      <div class="images-column">
+        <div class="image"></div>
+        <div class="image"></div>
+      </div>
+      <div class="images-column">
+        <div class="image"></div>
+        <div class="image"></div>
+      </div>
+    </div>
+    <div class="portfolio-text-2">
+      See more of these
+    </div>
+  </div>
+  <a name="contact-us-anchor"></a>
+  <div class="get-in-touch">
+    <div class="get-in-touch-text-1">
+      CONTACT US
+    </div>
+    <div class="get-in-touch-text-2">
+      Get In Touch
+    </div>
+    <div class="get-in-touch-input">
+      <input name="Your email" placeholder="Your Email"></input>
+      <input name="Subject" placeholder="Subject"></input>
+    </div>
+    <div class="get-in-touch-input">
+      <input accept="Message" placeholder="Your message"></input>
+    </div>
+    <button class="red-2">
+      Send message
+    </button>
+  </div>
+  <footer>
+  <div class="footer">
+    <div class="footer-text-1">
+      DOOB
+    </div>
+    <div class="footer-text-2">
+      CREATIVITY ABOVE
+    </div>
+    <div class="footer-text-3">
+      <li class="nav-item">
+          <a href="" class="nav-link footer-text-4">Home.</a>
+      </li>
+      <li class="nav-item">
+          <a href="#title" class="nav-link footer-text-4">About us.</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link footer-text-4">Portfolio.</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link footer-text-4">Blog.</a>
+      </li>
+      <li class="nav-item">
+          <a href="#contact-us-anchor" class="nav-link footer-text-4">Contact us.</a>
+      </li>
+    </div>
+    <div class="rights">
+      ©2019 - DooB, All Rights Reserved
+    </div>
+    <div class="s-icons">
+      <img class="s-ico" src="images/dribble.png">
+      <img class="s-ico" src="images/twitter.png">
+      <img class="s-ico" src="images/fb.png">
+    </div>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+</body>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+    const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+};
+
+$('.slick-slider').slick({
+  responsive: [
+   {
+      breakpoint: 768,
+      settings: "unslick"
+   }
+]
+});
+
+</script>
+</html>
