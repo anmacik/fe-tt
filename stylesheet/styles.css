@@ -26,9 +26,11 @@ p{
 }
 
 .header{
-    max-height: 190px;
+    position:sticky;
+    top: 0px;
     background-color: white;
     width: 100%;
+    height: 80px;
 }
 
 .navbar {
@@ -168,6 +170,7 @@ p{
 }
 
 .slider{
+  max-width: 660px;
   position:relative;
 }
 
@@ -235,7 +238,6 @@ p{
   display: flex;
   width: 100%;
   background-color: #314584;
-  height: 400px;
   flex-flow: column;
 }
 
@@ -307,7 +309,7 @@ input{
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 80px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -322,8 +324,12 @@ input{
         align-items: flex-start;
         flex-direction: row;
         padding: 1em 1em;
-
     }
+
+    .sub-menu-elements{
+      margin-right: 5%;
+    }
+
     .contact-us p{
       width: 100%;
     }
@@ -377,5 +383,6 @@ input{
     .get-in-touch{
       margin-left: 5%;
     }
+
 
 }
