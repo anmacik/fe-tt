@@ -326,7 +326,7 @@ input{
         display:flex;
         align-items: flex-start;
         flex-direction: row;
-        padding: 1em 1em;
+        padding: 2% 2%;
     }
 
     .sub-menu-elements{
