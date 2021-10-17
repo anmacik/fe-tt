@@ -46,7 +46,7 @@ p{
 .nav-logo{
   display: flex;
   justify-content: center;
-  width: 320px;
+  width: 19%;
 }
 
 .hamburger {
@@ -120,7 +120,7 @@ p{
   justify-content: space-between;
   align-items: center;
   color:#314584;
-  margin-left: 360px;
+  margin-left: 19%;
   margin-right: 10%;
   margin-top: 5%;
 }
@@ -182,7 +182,7 @@ p{
 .portfolio{
   display: flex;
   flex-flow: column;
-  margin-left: 360px;
+  margin-left: 19%;
   margin-right: 10%;
   margin-top: 5%;
   margin-bottom: 300px;
@@ -194,10 +194,10 @@ p{
   margin-bottom: 88px;
 }
 
+
 .images-column{
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
 }
 
 .images-greed{
@@ -211,7 +211,7 @@ p{
   width: 371px;
   height: 281px;
   background-color: grey;
-  margin-bottom: 33px;
+  margin-bottom: 2%;
 }
 
 .portfolio-text-2{
@@ -224,7 +224,7 @@ p{
 .get-in-touch{
   display: flex;
   flex-flow: column;
-  margin-left:360px;
+  margin-left:19%;
   margin-right:200px;
   margin-bottom: 60px;
 }
@@ -383,11 +383,21 @@ input{
 
     .image{
       align-self: center;
+      width: 371px;
+      height: 281px;
     }
 
     .get-in-touch{
       margin-left: 5%;
     }
+
+
+}
+@media only screen and (max-width: 1320px) {
+  .image{
+    width: 200px;
+    height: 152px;
+  }
 
 
 }
