@@ -49,21 +49,15 @@ p{
   width: 19%;
 }
 
-.hamburger {
-    display: none;
-}
-
 .bar {
     display: flex;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     background-color: #314584;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
-.nav-menu {
+#nav-menu {
     display: flex;
     flex-flow: row;
     width: 100%;
@@ -73,7 +67,6 @@ p{
 }
 
 .nav-item {
-    max-width: 110px;
     margin-left: 1em;
 }
 
@@ -225,7 +218,7 @@ p{
   display: flex;
   flex-flow: column;
   margin-left:19%;
-  margin-right:200px;
+  margin-right:10%;
   margin-bottom: 60px;
 }
 
@@ -309,18 +302,23 @@ input{
   align-self: center;
 }
 
+@media only screen and (max-width: 1320px) {
+  .image{
+    width: 200px;
+    height: 152px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 80px;
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top:80px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
-        transition: 0.3s;
         margin-left: 0px;
     }
 
@@ -353,18 +351,6 @@ input{
         cursor: pointer;
     }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
     .title {
       margin: 5%;
       flex-flow: column;
@@ -390,14 +376,9 @@ input{
     .get-in-touch{
       margin-left: 5%;
     }
+    .get-in-touch{
 
-
-}
-@media only screen and (max-width: 1320px) {
-  .image{
-    width: 200px;
-    height: 152px;
-  }
+    }
 
 
 }
