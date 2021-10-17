@@ -13,7 +13,8 @@
   <div class="header">
     <nav class="navbar">
         <a class="nav-logo"><img id="logo" src="images/logo.png"></a>
-        <ul class="nav-menu">
+        <nav id="nav-menu">
+          <i class="fa fa-bars"></i>
             <li class="nav-item">
                 <a href="" class="nav-link">Home.</a>
             </li>
@@ -39,9 +40,9 @@
                 </li>
             </nav>
 
-        </ul>
+        </nav>
 
-        <div class="hamburger">
+        <div class="hamburger" onclick="humburger()">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -145,23 +146,14 @@
 
 </body>
 <script>
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+function humburger() {
+  var menu = document.getElementById("nav-menu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
 }
-    const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-};
 
 $('.slick-slider').slick({
   responsive: [
