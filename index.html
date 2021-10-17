@@ -148,7 +148,7 @@
 <script>
 function humburger() {
   var menu = document.getElementById("nav-menu");
-  if (menu.style.display === "flex") {
+  if (menu.style.display === "flex"&&window.matchMedia("(max-width: 768px)").matches) {
     menu.style.display = "none";
   } else {
     menu.style.display = "flex";
