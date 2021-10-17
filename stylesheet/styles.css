@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-html{
+html, body{
 font-family: 'Work Sans', sans-serif;
 font-size: 1em;
 width: 100%;
