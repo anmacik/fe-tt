@@ -235,7 +235,7 @@ p{
   font-size: 40px;
 }
 
-.footer {
+footer {
   display: flex;
   width: 100%;
   background-color: #314584;
@@ -385,15 +385,15 @@ input{
       margin-left: 5%;
     }
     .footer-text-1{
-      font-size: 14px;
+      font-size: 10px;
     }
 
     .footer-text-2{
-      font-size: 40px;
+      font-size: 30px;
     }
 
     .footer-text-3{
-      font-size: 14;
+      font-size: 10;
     }
 
     .footer-text-4{
@@ -402,7 +402,7 @@ input{
     }
 
     .rights{
-      font-size: 10px;
+      font-size: 8px;
     }
 
 
