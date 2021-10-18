@@ -40,7 +40,7 @@ p{
 
 .navbar {
     display:flex;
-    padding: 1rem 15rem 0 2rem;
+    padding: 5% 15% 0 5%;
 }
 
 .nav-logo{
@@ -334,7 +334,7 @@ input{
         display:flex;
         align-items: flex-start;
         flex-direction: row;
-        padding: 2% 5%;
+        padding: 5% 5% 0 5%;
     }
 
     .sub-menu-elements{
