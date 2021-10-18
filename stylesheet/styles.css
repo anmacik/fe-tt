@@ -71,7 +71,7 @@ p{
 }
 
 .nav-link{
-    font-size: 18px;
+    font-size: 1.5em;
     color: #314584;
 }
 
@@ -128,13 +128,13 @@ p{
 }
 
 .title-text-1{
-  font-size: 62px;
+  font-size: 3em;
   color:#314584;
   margin-bottom: 50px;
 }
 
 .title-text-2{
-  font-size: 18px;
+  font-size: 1.5em;
   color:black;
   margin-bottom: 50px;
 }
@@ -160,7 +160,7 @@ p{
 }
 
 .touch-button{
-  font-size: 18px;
+  font-size: 1.5em;
   color:#314584;
 }
 
@@ -186,7 +186,7 @@ p{
 }
 
 .portfolio-text{
-  font-size: 42px;
+  font-size: 3em;
   color:#314584;
   margin-bottom: 88px;
 }
@@ -213,7 +213,7 @@ p{
 
 .portfolio-text-2{
   color: red;
-  font-size: 18px;
+  font-size: 1.5em;
   align-self: center;
 }
 
@@ -222,17 +222,17 @@ p{
   flex-flow: column;
   margin-left:19%;
   margin-right:10%;
-  margin-bottom: 60px;
+  margin-bottom: 4em;
 }
 
 .get-in-touch-text-1{
   color: red;
-  font-size: 20px;
+  font-size: 1.6em;
 }
 
 .get-in-touch-text-2{
   color:#314584;
-  font-size: 40px;
+  font-size: 3em;
 }
 
 footer {
@@ -246,19 +246,19 @@ footer {
   display: flex;
   margin-top:60px;
   color: white;
-  font-size: 18px;
+  font-size: 1.5em;
   align-self: center;
 }
 
 .footer-text-2{
   margin-top:20px;
   color: red;
-  font-size: 48px;
+  font-size: 3em;
   align-self: center;
 }
 
 .footer-text-3{
-  margin-top: 40px;
+  margin-top: 3em;
   display: flex;
   flex-flow: row;
  justify-content: center;
@@ -272,7 +272,7 @@ footer {
 .rights{
   color:white;
   margin-top: 40px;
-  font-size: 14px;
+  font-size: 1.1em;
   align-self: center;
 }
 
@@ -383,22 +383,25 @@ input{
 
     .get-in-touch{
       margin-left: 5%;
+      margin-right: 5%;
     }
     .footer-text-1{
-      font-size: 10px;
+      font-size: 1.2em;
     }
 
     .footer-text-2{
-      font-size: 30px;
+      font-size: 2em;
     }
 
     .footer-text-3{
-      font-size: 10;
+      font-size: 18px;
     }
 
     .footer-text-4{
       width: 80%;
       color:white;
+      font-size: 1em;
+
     }
 
     .rights{
