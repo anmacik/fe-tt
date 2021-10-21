@@ -10,36 +10,36 @@
 </head>
 <body>
 
-  <div class="header">
+  <header class="header">
     <nav class="navbar">
         <a class="nav-logo"><img id="logo" src="images/logo.png"></a>
-        <nav id="nav-menu">
+        <div id="nav-menu">
             <li class="nav-item">
-                <a href="" class="nav-link">Home.</a>
+                <a href="/" class="nav-link">Home.</a>
             </li>
             <li class="nav-item">
                 <a href="#title" class="nav-link">About us.</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Portfolio.</a>
+                <a href="#portfolio" class="nav-link">Portfolio.</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Blog.</a>
+                <a href="/blog" class="nav-link">Blog.</a>
             </li>
             <li class="nav-item">
-                <a href="#contact-us-anchor" class="nav-link">Contact us.</a>
+                <a href="#contact-us" class="nav-link">Contact us.</a>
             </li>
-            <nav class="sub-menu-elements">
+            <div class="sub-menu-elements">
               <select name="language" class="select-language">
                 <option>En.</option>
                 <option>Ru.</option>
               </select>
                 <li class="contact-us">
-                <a href="#contact-us-anchor" class="nav-link"><p>Contact us&rarr;</p></a>
+                <a href="#contact" class="nav-link"><p>Contact us&rarr;</p></a>
                 </li>
-            </nav>
+            </div>
 
-        </nav>
+        </div>
 
         <div class="hamburger" onclick="humburger()">
             <span class="bar"></span>
@@ -48,7 +48,7 @@
         </div>
     </nav>
 
-  </div>
+  </header>
   <div class="title" >
     <a href="title-anchor"></a>
     <div class="title-text">
@@ -66,7 +66,7 @@
   <div class="portfolio">
     <div class="portfolio-text">
       <p>See some of our</p>
-      <p> Creative work</p>
+      <p>Creative work</p>
     </div>
     <div class="images-greed">
       <div class="images-column">
@@ -87,13 +87,13 @@
     </div>
   </div>
   <div class="get-in-touch">
-    <a href="contact-us-anchor"></a>
-    <div class="get-in-touch-text-1">
+    <Button class="get-in-touch-text-1">
       CONTACT US
-    </div>
+    </Button>
     <div class="get-in-touch-text-2">
       Get In Touch
     </div>
+<form>
     <div class="get-in-touch-input">
       <input name="Your email" placeholder="Your Email"></input>
       <input name="Subject" placeholder="Subject"></input>
@@ -104,6 +104,7 @@
     <button class="red-2">
       Send message
     </button>
+</form>
   </div>
   <footer>
     <div class="footer-text-1">
