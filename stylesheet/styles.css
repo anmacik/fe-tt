@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	font-size:14px;
 }
 
 html, body{
@@ -33,9 +34,11 @@ p{
 .header{
     position:sticky;
     top: 0px;
-    background-color: white;
     width: 100%;
     height: 80px;
+	z-index:1;
+	
+    background-color: white;
 }
 
 .navbar {
@@ -79,7 +82,7 @@ p{
     color: #314584;
 }
 
-.contact-us p{
+.contact-us>a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,17 +113,21 @@ p{
   display: none;
 }
 .title{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  display: grid;  
+  grid-auto-rows: min-content;
+  grid-template-areas:
+	"title-text slick-slider"
+  ;
+  grid-template-columns: minmax(0, max-content) minmax(0, 1fr)
+  width: 100%;
   align-items: center;
   color:#314584;
-  margin-left: 19%;
+  margin-left: 15%;
   margin-right: 10%;
-  margin-top: 5%;
 }
 
 .title-text{
+	grid-area:title-text;
   display: flex;
   flex-flow: column;
   max-width: 560px;
@@ -165,6 +172,7 @@ p{
 }
 
 .slick-slider{
+	grid-area:slick-slider;
   display: block;
 }
 
@@ -191,30 +199,35 @@ p{
   margin-bottom: 88px;
 }
 
-
-.images-column{
-  display: flex;
-  flex-flow: column;
-}
-
 .images-greed{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:20px;
+  margin-top:20px;
+  max-width: 900px;
 }
 
 .image{
-  display: block;
-  width: 371px;
-  height: 281px;
+  width: 250px;
+  height: 180px;
   background-color: grey;
-  margin-bottom: 2%;
 }
 
 .portfolio-text-2{
   color: red;
   font-size: 1.5em;
   align-self: center;
+}
+.get-in-touch__form{
+	display:flex;
+	flex-direction:column;
+	padding: 20px;	
+	outline:2px solid black;
+	border-radius:40px;
+}
+.get-in-touch__form::after {
+	
+    position: absolute;
 }
 
 .get-in-touch{
@@ -304,14 +317,6 @@ input{
   justify-content: center;
   align-self: center;
 }
-
-@media only screen and (max-width: 1320px) {
-  .image{
-    width: 200px;
-    height: 152px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
 
     .bar{
@@ -367,20 +372,7 @@ input{
     .portfolio{
       margin:5%;
     }
-
-    .images-greed{
-      display: flex;
-      flex-flow:column;
-      justify-content: center;
-      align-content: center;
-    }
-
-    .image{
-      align-self: center;
-      width: 371px;
-      height: 281px;
-    }
-
+	
     .get-in-touch{
       margin-left: 5%;
       margin-right: 5%;
