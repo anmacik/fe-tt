@@ -6,14 +6,13 @@
 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <script  src="jquery.js"></script>
-
 </head>
-<body>
 
+<body>
   <header class="header">
     <nav class="navbar">
         <a class="nav-logo"><img id="logo" src="images/logo.png"></a>
-        <div id="nav-menu">
+        <ul id="nav-menu">
             <li class="nav-item">
                 <a href="/" class="nav-link">Home.</a>
             </li>
@@ -34,12 +33,14 @@
                 <option>En.</option>
                 <option>Ru.</option>
               </select>
-                <li class="contact-us">
-                <a href="#contact" class="nav-link"><p>Contact us&rarr;</p></a>
-                </li>
             </div>
+			<li class="contact-us">
+			<a href="#contact" class="nav-link">Contact us&rarr;</a>
+			</li>
+			
+			
 
-        </div>
+        </ul>
 
         <div class="hamburger" onclick="humburger()">
             <span class="bar"></span>
@@ -49,6 +50,7 @@
     </nav>
 
   </header>
+  <main>
   <div class="title" >
     <a href="title-anchor"></a>
     <div class="title-text">
@@ -69,18 +71,12 @@
       <p>Creative work</p>
     </div>
     <div class="images-greed">
-      <div class="images-column">
         <div class="image"></div>
         <div class="image"></div>
-      </div>
-      <div class="images-column">
         <div class="image"></div>
         <div class="image"></div>
-      </div>
-      <div class="images-column">
         <div class="image"></div>
         <div class="image"></div>
-      </div>
     </div>
     <div class="portfolio-text-2">
       See more of these
@@ -93,19 +89,20 @@
     <div class="get-in-touch-text-2">
       Get In Touch
     </div>
-<form>
-    <div class="get-in-touch-input">
-      <input name="Your email" placeholder="Your Email"></input>
-      <input name="Subject" placeholder="Subject"></input>
-    </div>
-    <div class="get-in-touch-input">
-      <input accept="Message" placeholder="Your message"></input>
-    </div>
-    <button class="red-2">
-      Send message
-    </button>
-</form>
+	<form class="get-in-touch__form">
+		<div class="get-in-touch-input">
+		  <input name="Your email" placeholder="Your Email"></input>
+		  <input name="Subject" placeholder="Subject"></input>
+		</div>
+		<div class="get-in-touch-input">
+		  <input accept="Message" placeholder="Your message"></input>
+		</div>
+		<button class="red-2">
+		  Send message
+		</button>
+	</form>
   </div>
+  </main>
   <footer>
     <div class="footer-text-1">
       DOOB
@@ -115,13 +112,13 @@
     </div>
     <div class="footer-text-3">
       <li>
-          <a href="" class="nav-link footer-text-4">Home.</a>
+          <a href="/" class="nav-link footer-text-4">Home.</a>
       </li>
       <li>
           <a href="#title-anchor" class="nav-link footer-text-4">About us.</a>
       </li>
       <li>
-          <a href="#" class="nav-link footer-text-4">Portfolio.</a>
+          <a href="/portfolio" class="nav-link footer-text-4">Portfolio.</a>
       </li>
       <li>
           <a href="#" class="nav-link footer-text-4">Blog.</a>
